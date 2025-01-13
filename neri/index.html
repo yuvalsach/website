@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Neri is One</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        margin: 32px; 
+        background-color: #2d3032;
+    }
+
+    .container {
+        background-image: url("images/poster.png");
+        background-repeat: no-repeat;
+        width:4083px;
+        height:700px;
+    }
+    
+    #goToVideo {
+      visibility: hiddsen;
+        position: absolute;
+        top: 32px;
+        left: 4140px;
+        width: 700px;
+        height: 700px;
+    }
+</style>
+</head>
+<body>
+ 
+<div class="container">   
+    <p id="animate" >
+        <a href="NeriVideo.html" id="goToVideo">
+            <img width="700px" height="700px" src="images/playVideo.png">
+        </a>  
+      <p id="posterDiv"> <img id="showPoster" onclick="showPosterAnim()" src="images/12.png" width="4083px" height="700px"></img></p> 
+    
+              
+    </p> 
+
+</div>
+    
+<buttons></button>;
+    
+<script>
+    
+    function showPosterAnim() {
+        let x = document.getElementById("showPoster")
+        let z = document.getElementById("posterDiv")
+
+
+        x.style.marginLeft = "7500px"
+        x.style.transition = "3s"
+        
+   //     z.style.transitionDelay = "1s"
+     //   z.style.transition = "1s"
+      //  z.style.opacity = "0"
+        x.style.color = "#2d3032"
+       // y.style.visibility = "visible"
+        
+    }
+    
+    function showVideoAnim() {
+        
+    }
+    
+
+
+    
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+    
+
+
+    
+</script>
+
+</body>
+</html>
